@@ -510,8 +510,8 @@ void check_ft_read(t_option *option)
     char *ft_read_buf = (char *)malloc(sizeof(char) * ACCEPT_STRING_SIZE);
     int read_ret;
     int ft_read_ret;
-    int read_fd;
-    int ft_read_fd;
+    int read_fd = 0;
+    int ft_read_fd = 0;
     if (option->input_mode == 1)
     {
         read_fd = 1;
