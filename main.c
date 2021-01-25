@@ -541,15 +541,11 @@ void check_ft_read(t_option *option)
     perror("Error_read");
     if (read_ret >= 0)
         read_buf[read_ret] = 0;
-    else
-        exit(1);
     printf("ft_read test\n");
     ft_read_ret = ft_read(ft_read_fd, ft_read_buf, ACCEPT_STRING_SIZE);
     perror("Error_ft_read");
     if (ft_read_ret >= 0)
         ft_read_buf[ft_read_ret] = 0;
-    else
-        exit(1);
     printf("---check return---\n");
     printf("read_buf_len : %ld\nft_read_buf_len : %ld\n", strlen(read_buf), strlen(ft_read_buf));
     printf("read_ret   : %d\nft_read_ret: %d\n",read_ret,ft_read_ret);
